@@ -7,7 +7,7 @@
 
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-  <title>Slider</title>
+  <title>Cahee</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap" rel="stylesheet">
 
@@ -17,7 +17,7 @@
 
 <body>
   <!-- header  -->
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__wrapper content__wrapper">
       <div class="header__grid">
         <div class="header__logo header__grid-left">
@@ -46,7 +46,7 @@
     </div>
   </header>
   <!-- about us -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__wrapper content__wrapper">
       <div class="about__img">
         <img src="img/about__img.png" alt="about__img">
@@ -66,7 +66,7 @@
     </div>
   </section>
   <!-- our services -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="services__wrapper content__wrapper">
       <div class="services__btns">
         <div class="services__btn onlineshopping shadow-small">
@@ -100,7 +100,7 @@
     </div>
   </section>
   <!-- gallery -->
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="gallery__wrapper content__wrapper">
       <h2>Gallery</h2>
       <p>
@@ -122,7 +122,7 @@
     </div>
   </section>
   <!-- subscribe  -->
-  <section class="subscribe">
+  <section class="subscribe" id="scrolldown">
     <div class="subscribe__wrapper content__wrapper">
       <div class="subscribe__text">
         <h3>Subscribe To Us</h3>
@@ -138,7 +138,7 @@
     </div>
   </section>
   <!-- blog -->
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="blog__wrapper content__wrapper">
       <div class="blog__text">
         <h2>Blog</h2>
@@ -148,28 +148,34 @@
           commodo consequat. Duis aute irure<br> dolor in reprehenderit in voluptate velit.
         </p>
         <div class="blog__cats">
-          <div class="blog__cat1">
+          <a href="20NOV/index.html" class="blog__cat1">
             <div class="blog__cat--widget">20<br> <span class="blog__cat--widget-text">NOV</span></div>
-            <p>Green Smoothies: Too Much of a Good Thing?</p>
-            <address>By Auskteez - 2 hours ago</address>
-          </div>
-          <div class="blog__cat2">
+            <div class="blog__cat--text">
+              <p>Green Smoothies: Too Much of a Good Thing?</p>
+              <span>By Auskteez - 2 hours ago</span>
+            </div>
+          </a>
+          <a href="14NOV/index.html" class="blog__cat2">
             <div class="blog__cat--widget">14<br> <span class="blog__cat--widget-text">NOV</span></div>
-            <p>Growing Food and a “Thirst” for Innovation</p>
-            <address>By Auskteez - 3 hours ago</address>
-          </div>
-          <div class="blog__cat3">
+            <div class="blog__cat--text">
+              <p>Growing Food and a “Thirst” for Innovation</p>
+              <span>By Auskteez - 3 hours ago</span>
+            </div>
+          </a>
+          <a href="10NOV/index.html" class="blog__cat3">
             <div class="blog__cat--widget">10<br> <span class="blog__cat--widget-text">NOV</span></div>
-            <p>Pesticides & Food: What You Need to Know</p>
-            <address>By Auskteez - 6 hours ago</address>
-          </div>
+            <div class="blog__cat--text">
+              <p>Pesticides & Food: What You Need to Know</p>
+              <span>By Auskteez - 6 hours ago</span>
+            </div>
+          </a>
         </div>
         <div class="blog__btn shadow-small">view more</div>
       </div>
     </div>
   </section>
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer__wrapper content__wrapper">
       <div class="footer__text">
         <h2>Contact</h2>
@@ -183,15 +189,21 @@
           <input class="footer__form-text" type="text" placeholder="Auskteez Tran">
           <input class="footer__form-text" type="text" placeholder="Your email...">
           <input class="footer__form-text" type="text" placeholder="Your phone number...">
-          <textarea name="messge" placeholder="Your messge..."></textarea>
+          <textarea class="footer__form-textarea" name="messge" placeholder="Your messge..."></textarea>
         </form>
         <div class="footer__contacts">
-          <p>ADDRESS</p>
-          <span>123 City name, Street, City, Country</span>
-          <p>EMAIL</p>
-          <a href="mailto:cahee@domain.com">cahee@domain.com</a>
-          <p>PHONE</p>
-          <a href="tel:+012 345 6789">+012 345 6789</a>
+          <div class="footer__contacts-list">
+            <p>ADDRESS</p>
+            <span>123 City name, Street, City, Country</span>
+          </div>
+          <div class="footer__contacts-list">
+            <p>EMAIL</p>
+            <a href="mailto:cahee@domain.com">cahee@domain.com</a>
+          </div>
+          <div class="footer__contacts-list">
+            <p>PHONE</p>
+            <a href="tel:+012 345 6789">+012 345 6789</a>
+          </div>
         </div>
       </div>
     </div>

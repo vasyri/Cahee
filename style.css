@@ -113,7 +113,6 @@ form{
 .about__text {
   display: inline-block;
   color: #ffffff;
-  float: right;
 }
 .about__text > h2 {
   margin: 150px 0 40px;
@@ -249,28 +248,53 @@ form{
   display: flex;
   justify-content: space-between;
 }
+.blog__cats > a{
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  background-size: cover;
+  padding: 30px 30px 25px 20px;
+}
+.blog__cat--text{
+  text-align: left;
+}
+.blog__cat--text > p{
+  font-size: 1.17em;
+  margin: 120px 0 20px;
+  font-weight: 300;
+}
+.blog__cat--text > span{
+  font-size: 0.77em;
+}
 .blog__cat1{
   background: linear-gradient(to top, rgba(0,0,0,0.9),transparent), url("img/blog__img1.jpg") no-repeat;
-  background-size: cover;
-  padding: 30px 15px 25px;
+  max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .blog__cat2{
   background: linear-gradient(to top, rgba(0,0,0,0.9),transparent), url("img/blog__img2.jpg") no-repeat;
-  background-size: cover;
-  padding: 30px 15px 25px;
+  max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .blog__cat3{
   background: linear-gradient(to top, rgba(0,0,0,0.9),transparent), url("img/blog__img3.jpg") no-repeat;
-  background-size: cover;
-  padding: 30px 15px 25px;
+  max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .blog__cat--widget{
   font-size: 1.88em;
   font-weight: 700;
   line-height: 25px;
   background: linear-gradient(rgba(38,38,38,0.5),rgba(38,38,38,0.5));
+  border-radius: 10px;
+  padding: 3px;
+  max-width: 60px;
+  margin-left: 15px;
 }
-.blog__cat--widget-text{
+.blog__cat--widget > span{
   font-size: 1.47rem;
 }
 .blog__btn{
@@ -303,21 +327,36 @@ form{
   max-width: 500px;
   width: 100%;
 }
+.footer__form-text:hover{
+  border-left: #355b82 5px solid;
+  font-weight: 700;
+  background: #00c4c4;
+}
 .footer__form-text{
   font-size: 0.88rem;
   line-height: 25px;
-  background: #00c4c4;
-  color: #ffffff;
+  background: linear-gradient(rgba(0,196,196,0.5), rgba(0,196,196,0.5));
   border: none;
   margin-bottom: 15px;
   padding: 20px;
 }
-.footer__form > textarea{
+.footer__form-text::placeholder{
+  color: #ffffff
+}
+.footer__form-textarea{
   font-size: 0.88rem;
   line-height: 25px;
-  background: #00c4c4;
+  background: linear-gradient(rgba(0,196,196,0.5), rgba(0,196,196,0.5));
   border: none;
   padding: 20px 20px 220px;
+}
+.footer__form-textarea:hover{
+  border-left: #355b82 5px solid;
+  font-weight: 700;
+  background: #00c4c4;
+}
+.footer__form-textarea::placeholder{
+  color: #ffffff;
 }
 .footer__contacts{
   line-height: 25px;
@@ -325,11 +364,14 @@ form{
   max-width: 500px;
   width: 100%;
 }
-.footer__contacts > p{
+.footer__contacts-list{
+  margin-bottom: 20px;
+}
+.footer__contacts > div >p{
   font-weight: 700;
   margin: 0;
 }
-.footer__contacts > a{
+.footer__contacts > div >a{
   text-decoration: none;
   color: #262626;
 }
