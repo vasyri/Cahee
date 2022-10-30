@@ -12,13 +12,12 @@ h2 {
   display: inline-block;
   margin: 0;
 }
-p{
-  color: teal;
+p {
+  color: #262626;
 }
 .content__wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  text-align: center;
 }
 .header__grid {
   display: flex;
@@ -54,35 +53,37 @@ p{
 .header__nav > a:hover {
   border-top: #ff6033 3px solid;
 }
-.blog__caption{
-  background: linear-gradient(rgba(0,0,0,0.2  ),rgba(0,0,0,0.2));
+.blog__caption {
+  background: linear-gradient(
+    -130deg,
+    rgba(7, 41, 1, 0.2),
+    rgba(7, 41, 1, 0.15)
+  );
   background-size: cover;
   text-align: right;
-  padding: 20px;
+  padding: 0 20px;
   margin-top: 50px;
 }
-.blog__caption-container  {
+.blog__caption-container {
   display: flex;
   justify-content: space-between;
 }
-.blog__caption-text{
+.blog__caption-text {
   flex-direction: column;
   text-align: right;
-  color: slategray;
+  color: #262626;
 }
-.blog__caption-text > h2{
+.blog__caption-text > h2 {
   font-size: 2em;
   padding: 175px 0 0;
 }
-.blog__content-text{
-  margin: 100px auto;
-  text-align: center;
+.blog__content-text {
+  margin: 100px 0;
   max-width: 600px;
 }
-.blog__content-text > h3{
+.blog__content-text > h3 {
   text-transform: uppercase;
-  color: slategray;
 }
-.blog__content-text > p{
+.blog__content-text > p {
   margin: 25px 0 50px;
 }
